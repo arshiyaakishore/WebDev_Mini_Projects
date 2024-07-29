@@ -1,0 +1,35 @@
+Set Interval
+The code inside setInterval is executed every 1000 milliseconds (1 second).
+This function will continuously update the clock every second.
+
+
+Getting HTML Elements
+hours, minutes, seconds, ampm: These variables hold the elements that display the digital time.
+hh, mm, ss: These variables hold the elements that display the circular indicators for hours, minutes, and seconds.
+dotH, dotM, dotS: These variables hold the dot elements that rotate to indicate hours, minutes, and seconds.
+
+
+Getting Current Time
+h, m, s: These variables hold the current hours, minutes, and seconds obtained from the Date object.
+ap: This variable determines whether it is AM or PM based on the current hour.
+
+
+
+Convert to 12-hour Format
+If the hour (h) is greater than 12, it is converted to 12-hour format by subtracting 12.
+Leading zeros are added to hours, minutes, and seconds if they are single digits.
+
+
+Update Digital Clock
+The inner HTML of hours, minutes, seconds, and ampm is updated to display the current time.
+
+
+Update Circular Indicators
+The strokeDashoffset property of hh, mm, and ss is set to visually indicate the passage of time.
+strokeDashoffset creates the effect of the circles being drawn from 0 to full.
+
+
+Update Dot Indicators
+The transform property of dotH, dotM, and dotS is set to rotate the dots based on the current time.
+Each hour is represented by 30 degrees (360/12).
+Each minute and second are represented by 6 degrees (360/60).
