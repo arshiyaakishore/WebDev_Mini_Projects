@@ -2,4 +2,5 @@
 
 1. Digital Clock
 2. Netflix Clone
-3. ToDo List
+3. To-Do List
+4. Notes App
